@@ -1,5 +1,5 @@
-FROM registry.access.redhat.com/redhat/rhel7beta
-MAINTAINER scollier <scollier@redhat.com>
+FROM rhel6.5
+MAINTAINER Vaibhav
 
 # Update the system
 RUN yum -y update; yum clean all
@@ -14,7 +14,7 @@ RUN yum -y install procps-ng iptables; yum clean all
 ADD ./mongod.conf /etc/
 
 # Expose ports
-EXPOSE 27017 28017
+EXPOSE 27017
 
 # USER mongod
 
