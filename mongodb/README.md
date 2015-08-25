@@ -3,7 +3,7 @@ dockerfiles-rhel-mongodb
 
 Red Hat Enterprise Linux dockerfile for MongoDB
 
-Tested on Docker 0.10.0-dev
+Tested on Docker 1.7.1
 
 Get the version of Docker
 
@@ -13,7 +13,7 @@ To build:
 
 Copy the sources down -
 
-    # docker build -rm -t <username>/mongo .
+    # docker build -t <username>/mongo .
 
 To run:
 
